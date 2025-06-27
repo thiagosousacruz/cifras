@@ -1,0 +1,20 @@
+{
+  "categories": {
+    "Nacional": {
+      "rock": [],
+      "pop": [],
+      "sertanejo": [],
+      "mpb": []
+    },
+    "Internacional": {
+      "anos_80": [],
+      "pop": [],
+      "rock": [],
+      "blues": []
+    },
+    "Exemplos": {
+      "demonstracao": ["Exemplo - Cifra Simples.txt"]
+    }
+  }
+}
+

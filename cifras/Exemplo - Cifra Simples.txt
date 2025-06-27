@@ -1,0 +1,38 @@
+Cifra Simples - Exemplo
+
+Tom: G
+
+Intro: G  C  D  G
+
+G           C
+Esta é uma cifra
+D           G
+De exemplo para teste
+G           C
+Com acordes simples
+D           G
+Para demonstração
+
+Refrão:
+Em          C
+Exemplo, exemplo
+G           D
+Esta é só uma demonstração
+Em          C
+Exemplo, exemplo
+G           D           G
+Para testar nossa aplicação
+
+G           C
+Você pode criar
+D           G
+Suas próprias cifras
+G           C
+E organizá-las
+D           G
+Como preferir
+
+(Refrão)
+
+Final: G  C  D  G
+
