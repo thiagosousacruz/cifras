@@ -39,7 +39,13 @@ app.get('/api/cifras', (req, res) => {
     };
 
     try {
+        console.log(`Attempting to read directory: ${cifrasDir}`);
+        if (!fs.existsSync(cifrasDir)) {
+            console.error(`Directory does not exist: ${cifrasDir}`);
+            return res.status(500).send('Erro: Diretório de cifras não encontrado.');
+        }
         const cifras = getCifrasRecursive(cifrasDir);
+        console.log(`Successfully read ${cifras.length} top-level entries from ${cifrasDir}`);
         res.json(cifras);
     } catch (error) {
         console.error("Erro ao ler o diretório de cifras:", error);
