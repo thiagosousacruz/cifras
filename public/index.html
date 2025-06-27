@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifras</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div id="lista-cifras-container">
+        <div class="home-header">
+            <h1>Cifras</h1>
+            <button id="home-theme-toggle-btn" title="Alternar Tema"><span class="material-symbols-outlined">brightness_6</span></button>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Buscar música ou artista...">
+            <span class="material-symbols-outlined">search</span>
+        </div>
+        <div id="lista-cifras"></div>
+    </div>
+
+    <div id="cifra-view-container" class="hidden">
+        <div class="cifra-controls">
+            <button id="back-btn" title="Voltar"><span class="material-symbols-outlined">arrow_back</span></button>
+            <button id="theme-toggle-btn" title="Alternar Tema"><span class="material-symbols-outlined">brightness_6</span></button>
+            <button id="font-decrease-btn" title="Diminuir Fonte"><span class="material-symbols-outlined">text_decrease</span></button>
+            <button id="font-increase-btn" title="Aumentar Fonte"><span class="material-symbols-outlined">text_increase</span></button>
+            <button id="scroll-toggle-btn" title="Iniciar Rolagem"><span class="material-symbols-outlined">play_arrow</span></button>
+            <div class="scroll-speed">
+                <span class="material-symbols-outlined">speed</span>
+                <input type="range" id="scroll-speed-slider" min="1" max="10" value="3" title="Velocidade da Rolagem">
+            </div>
+        </div>
+        <pre id="cifra-content"></pre>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
