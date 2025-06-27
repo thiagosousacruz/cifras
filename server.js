@@ -1,15 +1,38 @@
-
 const express = require('express');
 const fs = require('fs');
 const path = require('path');
+const multer = require('multer');
 
 const app = express();
 const port = 3000;
 
-const cifrasDir = path.join(__dirname, 'cifras');
+const cifrasDir = path.join(process.cwd(), 'cifras');
 
 // Servir arquivos estáticos da pasta 'public'
 app.use(express.static('public'));
+
+// Configuração do Multer para upload
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        const categoryPath = req.body.categoryPath || '';
+        const uploadPath = path.join(cifrasDir, categoryPath);
+        // Cria a pasta da categoria se não existir
+        fs.mkdirSync(uploadPath, { recursive: true });
+        cb(null, uploadPath);
+    },
+    filename: function (req, file, cb) {
+        // Garante que o nome do arquivo seja seguro
+        const safeName = file.originalname.replace(/[^a-zA-Z0-9\.\- ]/g, '_');
+        cb(null, safeName);
+    }
+});
+
+const upload = multer({ storage: storage });
+
+// Rota para a página de admin
+app.get('/admin', (req, res) => {
+    res.sendFile(path.join(__dirname, 'public', 'admin.html'));
+});
 
 // API para listar as cifras
 app.get('/api/cifras', (req, res) => {
@@ -34,7 +57,7 @@ app.get('/api/cifras', (req, res) => {
                 }
                 return null;
             })
-            .filter(Boolean); // Remove null entries
+            .filter(Boolean);
         return files;
     };
 
@@ -56,7 +79,6 @@ app.get('/api/cifra', (req, res) => {
 
     const fullPath = path.join(cifrasDir, filePath);
 
-    // Validação de segurança simples para evitar Path Traversal
     if (path.relative(cifrasDir, fullPath).startsWith('..')) {
         return res.status(403).send('Acesso negado.');
     }
@@ -70,6 +92,15 @@ app.get('/api/cifra', (req, res) => {
     });
 });
 
+// API para upload de cifras
+app.post('/api/upload', upload.single('cifraFile'), (req, res) => {
+    if (!req.file) {
+        return res.status(400).send('Nenhum arquivo enviado.');
+    }
+    res.send(`Arquivo '${req.file.filename}' enviado com sucesso!`);
+});
+
 app.listen(port, () => {
     console.log(`Servidor rodando em http://localhost:${port}`);
+    console.log('Página de admin disponível em http://localhost:3000/admin');
 });
