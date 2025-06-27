@@ -9,7 +9,7 @@ const port = 3000;
 const cifrasDir = path.join(process.cwd(), 'cifras');
 
 // Servir arquivos estáticos da pasta 'public'
-app.use(express.static('public'));
+
 
 // API para listar as cifras
 app.get('/api/cifras', (req, res) => {
