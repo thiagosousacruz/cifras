@@ -1,87 +1,107 @@
 The Animals - House of The Rising Sun
 
-[Intro] Am  C  D  F  Am  E  Am  E
+[Intro] Am  C  D  F 
+        Am  E  Am  E
 
 [Primeira Parte]
 
-      Am    C        D       F
+      Am    C        D          F
 There is a house in New Orleans
-      Am       C      E    E
-They call the Rising Sun
-          Am       C       D         F
-And It's been the ruin of many poor boys
-     Am      E       Am    C  D  F  Am  E  Am
+      Am       C      E   
+They call the rising sun
+          Am       C 
+And it's been the ruin
+    D           F
+Of many a poor boys
+     Am      E       Am  C  D  F 
 And God, I know, I'm one
-  E
 
+( Am  E  Am  E )
 
 [Segunda Parte]
 
     Am     C     D     F
 My mother was a tailor
-     Am       C         E   E
+     Am       C        E 
 She sewed my new blue jeans
     Am     C     D        F
 My father was a gambling man
- Am      E      Am     C  D  F  Am  E  Am  E
+ Am      E      Am  C  D  F  
 Down in New Orleans
+
+( Am  E  Am  E )
 
 [Terceira Parte]
 
         Am     C       D       F
-And the only things a gambler needs
-      Am      C       E   E
+Now the only things a gambler needs
+      Am      C       E   
 Is a suitcase and a trunk
-        Am    C      D        F
-And the only time he is satisfied
-     Am      E       Am  C  D  F  Am  E  Am  
-Is when he's all a-drunk
-E
+        Am    C    D         F
+And the only time he's satisfied
+     Am      E     Am  C  D  F  
+Is when he's all drunk
 
+( Am  E  Am  E )
+
+[Solo] Am  C  D  F 
+       Am  C  E
+       Am  C  D  F
+       Am  E  Am  C  D  F
+       Am  E  Am  E
 
 [Quarta Parte]
 
-    Am       C             D       F
-So mothers,    tell your children
-        Am     C       E    E
+     Am     C                 D  F
+Oh, mother!   Tell your children
+        Am     C       E    
 Not to do what I have done
-  Am        C       D           F
-Spend your life in sin and misery
-        Am           E      Am  C  D  F  Am  
-In the house of the Rising Sun
-E  Am  E
+  Am        C        D           F
+Spend your lives in sin and misery
+        Am           E      Am  C  D  F 
+In the house of the rising sun
 
+( Am  E  Am  E )
 
 [Quinta Parte]
 
-      Am      C            D      F
-I've got one foot on the platform
-    Am         C        E   E
+               Am      
+Well, I've got one foot 
+C        D      F
+On the platform
+    Am         C        E   
 The other foot on the train
-     Am    C       D      F
+     Am    C       D          F
 I'm going back to New Orleans
-    Am       E         Am   C  D  F  Am  E  
+    Am       E         Am  C  D  F  
 To wear the ball and chain
-Am  E
 
+( Am  E  Am  E )
 
-[Sexta Parte]
+[Primeira Parte]
 
-      Am    C        D           F
-There is a house in New Orleans
-      Am       C      E    E
-They call the Rising Sun
-          Am       C       D         F
-And It's been the ruin of many poor boys
-     Am       E      Am   C  D  F  Am  E  Am 
+            Am    C    
+Well, there is a house
+    D          F
+In New Orleans
+      Am       C      E   
+They call the rising sun
+          Am       C 
+And it's been the ruin
+    D           F
+Of many a poor boys
+     Am      E       Am 
 And God, I know, I'm one
- E  Am
 
-
+[Final] Am  C  D  F  
+        Am  E  Am  Dm 
+        Am  Dm  Am  Dm 
+        Am  Dm  Am  Dm  Am9
 
 ----------------- Acordes -----------------
 Am = 2 0 0 0
 C = 0 0 0 3
 D = 2 2 2 0
+Dm = 2 2 1 0
 E = 1 4 0 2
 F = 2 0 1 0
